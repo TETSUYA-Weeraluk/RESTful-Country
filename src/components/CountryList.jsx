@@ -27,7 +27,7 @@ const CountryList = () => {
     <div className={`${isDarkMode ? DarkModeContent : ""} p-4`}>
       <div className={`max-w-7xl mx-auto`}>
         {error && <h1 className="text-3xl items-start">{error}</h1>}
-        <div className="md:flex justify-between">
+        <div className="flex md:justify-between md:flex-row flex-col gap-3">
           <InputSearchCountry
             searchInput={searchInput}
             searchCountriesInput={searchCountriesInput}

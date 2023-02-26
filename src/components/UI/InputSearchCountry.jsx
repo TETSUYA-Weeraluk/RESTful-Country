@@ -10,7 +10,7 @@ const InputSearchCountry = ({ searchCountriesInput, searchInput }) => {
     <div
       className={`${
         isDarkMode ? DarkModeHeader : ""
-      } shadow-md py-2 px-6 flex items-center gap-2 rounded-md w-2/4`}
+      } shadow-md py-2 px-6 flex items-center gap-2 rounded-md md:w-2/4`}
     >
       <BiSearchAlt2 color={isDarkMode ? "" : "black"} />
       <input

@@ -1,5 +1,6 @@
 const { createSlice } = require("@reduxjs/toolkit");
 
+
 const initialStateCountry = {
   isDarkMode: true,
   country: [
@@ -23,7 +24,8 @@ const countrySlice = createSlice({
   initialState: initialStateCountry,
   reducers: {
     changeMode(state) {
-      state.isDarkMode = !state.isDarkMode;
+      state.isDarkMode = !state.isDarkMode
+      localStorage.setItem('theme',state.isDarkMode)
     },
     replaceData(state, action) {
       state.country = action.payload;
